@@ -10,7 +10,7 @@ on:
 
 jobs:
   lint:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
@@ -24,8 +24,7 @@ jobs:
         run: yarn lint && yarn format && yarn type-check
 
   tests:
-    runs_on: ubuntu-latest
-    needs: lint
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
