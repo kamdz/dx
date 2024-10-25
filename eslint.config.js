@@ -1,3 +1,4 @@
+import { includeIgnoreFile } from '@eslint/compat';
 import pluginJs from '@eslint/js';
 import importPlugin from 'eslint-plugin-import';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
@@ -6,6 +7,7 @@ import tseslint from 'typescript-eslint';
 
 export default [
   { files: ['**/*.{js,mjs,cjs,ts}'] },
+  includeIgnoreFile(`${process.cwd()}/.gitignore`),
   { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
   pluginJs.configs.recommended,
   {

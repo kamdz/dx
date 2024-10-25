@@ -55,30 +55,30 @@ export default async () => {
                 tasks.push({
                   title: 'package.json',
                   task: async (): Promise<void> => {
-                    try {
-                      const targetPackageJson = await fs.readJSON(join(CURRENT_DIR, 'package.json'));
-                      const sourcePackageJson = await fs.readJSON(join(DX_TEMP_DIR, 'package.json'));
-                      const workingPackagejson = { ...targetPackageJson };
-                      Object.keys(workingPackagejson).forEach(key => {
-                        if (!INIT_PACKAGE_VALUES.hasOwnProperty(key)) {
-                          if (['scripts', 'devDependencies'].includes(key)) {
-                            workingPackagejson[key] = Object.assign(workingPackagejson[key], sourcePackageJson[key]);
-                          } else {
-                            workingPackagejson[key] = sourcePackageJson[key];
+                    fs.readJSON(join(CURRENT_DIR, 'package.json'))
+                      .then(async packageJson => {
+                        const dxPackageJson = await fs.readJSON(join(DX_TEMP_DIR, 'package.json'));
+                        const workingPackagejson = { ...packageJson };
+                        Object.keys(workingPackagejson).forEach(key => {
+                          if (key in INIT_PACKAGE_VALUES) {
+                            if (['scripts', 'devDependencies'].includes(key)) {
+                              workingPackagejson[key] = Object.assign(workingPackagejson[key], dxPackageJson[key]);
+                            } else {
+                              workingPackagejson[key] = dxPackageJson[key];
+                            }
                           }
-                        }
+                        });
+                        await fs.writeJSON(join(CURRENT_DIR, 'package.json'), workingPackagejson, { spaces: '  ' });
+                      })
+                      .catch(async () => {
+                        const dxPackageJson = await fs.readJSON(join(DX_TEMP_DIR, 'package.json'));
+                        const workingPackagejson = { ...dxPackageJson };
+                        const keys = Object.keys(INIT_PACKAGE_VALUES) as Array<keyof typeof INIT_PACKAGE_VALUES>;
+                        keys.forEach(key => {
+                          workingPackagejson[key] = INIT_PACKAGE_VALUES[key];
+                        });
+                        await fs.writeJSON(join(CURRENT_DIR, 'package.json'), workingPackagejson, { spaces: '  ' });
                       });
-                      await fs.writeJSON(join(CURRENT_DIR, 'package.json'), workingPackagejson, { spaces: '  ' });
-                    } catch (err) {
-                      await fs.copy(join(DX_TEMP_DIR, 'package.json'), join(CURRENT_DIR, 'package.json'));
-                      const targetPackageJson = await fs.readJSON(join(CURRENT_DIR, 'package.json'));
-                      const workingPackagejson = { ...targetPackageJson };
-                      const keys = Object.keys(INIT_PACKAGE_VALUES) as Array<keyof typeof INIT_PACKAGE_VALUES>;
-                      keys.forEach(key => {
-                        workingPackagejson[key] = INIT_PACKAGE_VALUES[key];
-                      });
-                      await fs.writeJSON(join(CURRENT_DIR, 'package.json'), workingPackagejson, { spaces: '  ' });
-                    }
                   }
                 });
                 return task.newListr(tasks, { concurrent: true });
@@ -93,8 +93,8 @@ export default async () => {
   try {
     await update.run();
     await fs.remove(DX_TEMP_DIR);
-  } catch (e: any) {
-    console.error(e?.message || e);
-    process.exit(e?.exitCode || 1);
+  } catch (e: unknown) {
+    console.error(e);
+    process.exit(1);
   }
 };

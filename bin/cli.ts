@@ -2,6 +2,7 @@
 import { program } from 'commander';
 
 import update from '@/update';
+
 import packageJson from '../package.json';
 
 program
