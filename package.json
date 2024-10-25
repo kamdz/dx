@@ -1,7 +1,6 @@
 {
   "name": "@kamdz/dx",
   "version": "1.0.1",
-  "private": true,
   "description": "",
   "keywords": [],
   "bugs": {
@@ -85,11 +84,8 @@
         "@semantic-release/git",
         {
           "assets": [
-            "dist",
             "package.json",
-            "README.md",
-            "CHANGELOG.md",
-            "LICENSE"
+            "CHANGELOG.md"
           ],
           "message": "chore(release): ${nextRelease.version} \n\n${nextRelease.notes}"
         }
