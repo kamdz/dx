@@ -19,7 +19,7 @@ export default async () => {
     description: '',
     keywords: [],
     bugs: { url: 'https://github.com/__PROJECT_NAME__/issues' },
-    repository: { type: 'git', url: 'https://github.com/__PROJECT_NAME__' },
+    repository: { type: 'git', url: 'git+https://github.com/__PROJECT_NAME__.git' },
     author: {
       name: 'Kamil Dzwonkowski',
       email: 'npm@kamdz.dev',

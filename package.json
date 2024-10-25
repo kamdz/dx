@@ -6,9 +6,12 @@
   "bugs": {
     "url": "https://github.com/kamdz/dx/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kamdz/dx"
+    "url": "git+https://github.com/kamdz/dx.git"
   },
   "license": "MIT",
   "author": {
