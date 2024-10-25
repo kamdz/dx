@@ -36,6 +36,7 @@
     "dist",
     "package.json",
     "README.md",
+    "CHANGELOG.md",
     "LICENSE"
   ],
   "scripts": {
@@ -73,13 +74,22 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
       "@semantic-release/npm",
       [
         "@semantic-release/git",
         {
           "assets": [
+            "dist",
             "package.json",
-            "CHANGELOG.md"
+            "README.md",
+            "CHANGELOG.md",
+            "LICENSE"
           ],
           "message": "chore(release): ${nextRelease.version} \n\n${nextRelease.notes}"
         }
