@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/kamdz/dx/compare/v1.0.1...v1.0.2) (2024-10-25)
+
+
+### Bug Fixes
+
+* **release:** change config ([6eb555e](https://github.com/kamdz/dx/commit/6eb555e3421373d936895183b7b7485f0f1e9191))
+
 ## [1.0.1](https://github.com/kamdz/dx/compare/v1.0.0...v1.0.1) (2024-10-25)
 
 
