@@ -45,8 +45,7 @@
     "dev": "tsx watch src/index.ts",
     "dx": "npx @kamdz/dx",
     "format": "prettier --write --ignore-unknown .",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "eslint . --fix",
     "lint-staged": "lint-staged",
     "prepare": "husky",
     "semantic-release": "semantic-release",
@@ -70,6 +69,21 @@
   "release": {
     "branches": [
       "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "CHANGELOG.md"
+          ],
+          "message": "chore(release): ${nextRelease.version} \n\n${nextRelease.notes}"
+        }
+      ]
     ]
   },
   "devDependencies": {
