@@ -15,6 +15,7 @@ export default async () => {
   const INIT_PACKAGE_VALUES = {
     name: '__PROJECT_NAME__',
     version: '0.0.0-development',
+    private: true,
     description: '',
     keywords: [],
     bugs: { url: 'https://github.com/__PROJECT_NAME__/issues' },
@@ -60,7 +61,11 @@ export default async () => {
                       const workingPackagejson = { ...targetPackageJson };
                       Object.keys(workingPackagejson).forEach(key => {
                         if (!INIT_PACKAGE_VALUES.hasOwnProperty(key)) {
-                          workingPackagejson[key] = sourcePackageJson[key];
+                          if (['scripts', 'devDependencies'].includes(key)) {
+                            workingPackagejson[key] = Object.assign(workingPackagejson[key], sourcePackageJson[key]);
+                          } else {
+                            workingPackagejson[key] = sourcePackageJson[key];
+                          }
                         }
                       });
                       await fs.writeJSON(join(CURRENT_DIR, 'package.json'), workingPackagejson, { spaces: '  ' });
