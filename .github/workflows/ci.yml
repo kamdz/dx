@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v34
+        uses: actions/checkout@v4
       - name: Enable corepack
         run: corepack enable
       - name: Setup Node.js
