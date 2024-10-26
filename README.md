@@ -39,6 +39,6 @@ While monorepos with shared configs (ESLint, Prettier, TypeScript) are helpful, 
 
 ## 🔧 Customization
 
-To create your own `@user/dx`, fork this repository, modify whatever you need (except for the `bin` and `src` directories), and update the name in `package.json`. Done!
+To create your own `@user/dx`, fork this repository, modify whatever you need (except for the `bin` and `src` directories), and update the `name`, `bugs`, `repository`, `author`, `scripts.dx` in `package.json`. Done!
 
 If you enjoy this project, please ⭐️ it!
