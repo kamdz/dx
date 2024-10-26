@@ -8,13 +8,13 @@ import picocolors from 'picocolors';
 
 import packageJson from '../package.json';
 
-export default async () => {
+export default async (path: string = '') => {
   const DX_REPO_NAME = packageJson.name.replace('@', '');
   const DX_REPO_URL = `https://github.com/${DX_REPO_NAME}`;
 
   const DX_TEMP_DIR = fs.mkdtempSync(join(os.tmpdir(), 'DX_'));
-  const CURRENT_DIR = process.cwd();
-  const INIT_PROJECT_NAME = basename(CURRENT_DIR);
+  const WORKING_DIR = join(process.cwd(), path);
+  const INIT_PROJECT_NAME = basename(WORKING_DIR);
   const INIT_PROJECT_URL = `${packageJson.author.url}/${INIT_PROJECT_NAME}`;
   const INIT_PACKAGE_VALUES = {
     name: INIT_PROJECT_NAME,
@@ -49,36 +49,36 @@ export default async () => {
                   return {
                     title: item,
                     task: async (): Promise<void> => {
-                      await fs.copy(join(DX_TEMP_DIR, item), join(CURRENT_DIR, item));
+                      await fs.copy(join(DX_TEMP_DIR, item), join(WORKING_DIR, item));
                     }
                   };
                 });
                 tasks.push({
                   title: 'package.json',
                   task: async (): Promise<void> => {
-                    fs.readJSON(join(CURRENT_DIR, 'package.json'))
+                    fs.readJSON(join(WORKING_DIR, 'package.json'))
                       .then(async packageJson => {
                         const dxPackageJson = await fs.readJSON(join(DX_TEMP_DIR, 'package.json'));
-                        const workingPackagejson = { ...packageJson };
-                        Object.keys(workingPackagejson).forEach(key => {
+                        const resultPackagejson = { ...packageJson };
+                        Object.keys(resultPackagejson).forEach(key => {
                           if (key in INIT_PACKAGE_VALUES) {
                             if (['scripts', 'devDependencies'].includes(key)) {
-                              workingPackagejson[key] = Object.assign(workingPackagejson[key], dxPackageJson[key]);
+                              resultPackagejson[key] = Object.assign(resultPackagejson[key], dxPackageJson[key]);
                             } else {
-                              workingPackagejson[key] = dxPackageJson[key];
+                              resultPackagejson[key] = dxPackageJson[key];
                             }
                           }
                         });
-                        await fs.writeJSON(join(CURRENT_DIR, 'package.json'), workingPackagejson, { spaces: '  ' });
+                        await fs.writeJSON(join(WORKING_DIR, 'package.json'), resultPackagejson, { spaces: '  ' });
                       })
                       .catch(async () => {
                         const dxPackageJson = await fs.readJSON(join(DX_TEMP_DIR, 'package.json'));
-                        const workingPackagejson = { ...dxPackageJson };
+                        const resultPackagejson = { ...dxPackageJson };
                         const keys = Object.keys(INIT_PACKAGE_VALUES) as Array<keyof typeof INIT_PACKAGE_VALUES>;
                         keys.forEach(key => {
-                          workingPackagejson[key] = INIT_PACKAGE_VALUES[key];
+                          resultPackagejson[key] = INIT_PACKAGE_VALUES[key];
                         });
-                        await fs.writeJSON(join(CURRENT_DIR, 'package.json'), workingPackagejson, { spaces: '  ' });
+                        await fs.writeJSON(join(WORKING_DIR, 'package.json'), resultPackagejson, { spaces: '  ' });
                       });
                   }
                 });

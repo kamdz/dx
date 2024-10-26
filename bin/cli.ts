@@ -8,8 +8,9 @@ import packageJson from '../package.json';
 program
   .version(packageJson.version)
   .description(packageJson.description)
-  .action(() => {
-    update();
+  .argument('[path]', 'optional path (default: current directory)')
+  .action(path => {
+    update(path);
   });
 
 program.parse(process.argv);
