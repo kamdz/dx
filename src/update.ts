@@ -61,7 +61,7 @@ export default async (path: string = '') => {
                         const dxPackageJson = await fs.readJSON(join(DX_TEMP_DIR, 'package.json'));
                         const resultPackagejson = { ...packageJson };
                         Object.keys(resultPackagejson).forEach(key => {
-                          if (key in INIT_PACKAGE_VALUES) {
+                          if (!(key in INIT_PACKAGE_VALUES)) {
                             if (['scripts', 'devDependencies'].includes(key)) {
                               resultPackagejson[key] = Object.assign(resultPackagejson[key], dxPackageJson[key]);
                             } else {
