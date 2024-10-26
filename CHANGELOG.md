@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/kamdz/dx/compare/v1.0.2...v1.0.3) (2024-10-25)
+
+
+### Bug Fixes
+
+* **npm:** config ([0729841](https://github.com/kamdz/dx/commit/0729841d87ce6cd72c2a676d007971d92502c16f))
+
 ## [1.0.2](https://github.com/kamdz/dx/compare/v1.0.1...v1.0.2) (2024-10-25)
 
 
