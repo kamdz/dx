@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/kamdz/dx/compare/v1.0.2...v1.1.0) (2024-10-26)
+
+
+### Features
+
+* **cli:** add path argument to cli [#6](https://github.com/kamdz/dx/issues/6) ([caafa43](https://github.com/kamdz/dx/commit/caafa43894564f3c515df47f1ba040b08d01785e))
+
 ## [1.0.2](https://github.com/kamdz/dx/compare/v1.0.1...v1.0.2) (2024-10-26)
 
 
