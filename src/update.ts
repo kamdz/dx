@@ -10,7 +10,7 @@ import packageJson from '../package.json';
 
 export default async () => {
   const DX_REPO_NAME = packageJson.name.replace('@', '');
-  const DX_REPO_URL = `${packageJson.author.url}${DX_REPO_NAME}`;
+  const DX_REPO_URL = `https://github.com/${DX_REPO_NAME}`;
 
   const DX_TEMP_DIR = fs.mkdtempSync(join(os.tmpdir(), 'DX_'));
   const CURRENT_DIR = process.cwd();
