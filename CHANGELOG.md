@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/kamdz/dx/compare/v1.0.1...v1.0.2) (2024-10-26)
+
+
+### Bug Fixes
+
+* typo in repo url ([90877cb](https://github.com/kamdz/dx/commit/90877cbbaf454154f6c1364a64f728da2075f5af))
+
 ## [1.0.1](https://github.com/kamdz/dx/compare/v1.0.0...v1.0.1) (2024-10-26)
 
 
