@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/kamdz/dx/compare/v1.1.0...v1.1.1) (2024-10-26)
+
+
+### Bug Fixes
+
+* **readme:** add new cli argument ([259c659](https://github.com/kamdz/dx/commit/259c659efadf458a9c05f7be377c11f0b5c01435))
+
 # [1.1.0](https://github.com/kamdz/dx/compare/v1.0.2...v1.1.0) (2024-10-26)
 
 
