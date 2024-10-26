@@ -11,7 +11,7 @@ export default async () => {
   const DX_REPO_URL = `https://github.com/${DX_REPO_NAME}`;
   const DX_TEMP_DIR = fs.mkdtempSync(join(os.tmpdir(), 'kamdz_dx-'));
   const CURRENT_DIR = process.cwd();
-  const SKIP_PATHS = ['.git', 'bin', 'src', 'package.json', 'README.MD', 'yarn.lock'];
+  const SKIP_PATHS = ['.git', 'bin', 'src', 'package.json', 'CHANGELOG.md', 'README.MD', 'yarn.lock'];
   const INIT_PACKAGE_VALUES = {
     name: '__PROJECT_NAME__',
     version: '0.0.0-development',
