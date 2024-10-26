@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/kamdz/dx/compare/v1.0.3...v1.1.0) (2024-10-26)
+
+
+### Features
+
+* add git release ([105ce5b](https://github.com/kamdz/dx/commit/105ce5b04f848bc9e939714bb083d6a20587eb15))
+
 ## [1.0.3](https://github.com/kamdz/dx/compare/v1.0.2...v1.0.3) (2024-10-25)
 
 
