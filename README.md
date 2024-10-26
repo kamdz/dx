@@ -5,8 +5,9 @@
 🚀 **Quick start:**
 
 ```bash
-# Works in both new or existing projects
 npx @kamdz/dx
+# or
+npx @kamdz/dx [path]
 ```
 
 ## ✨ Features
