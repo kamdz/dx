@@ -8,7 +8,7 @@ import picocolors from 'picocolors';
 
 import packageJson from '../package.json';
 
-export default async (path: string = '') => {
+export default async (path = '') => {
   const DX_REPO_NAME = packageJson.name.replace('@', '');
   const DX_REPO_URL = `https://github.com/${DX_REPO_NAME}`;
 
@@ -74,7 +74,7 @@ export default async (path: string = '') => {
                       .catch(async () => {
                         const dxPackageJson = await fs.readJSON(join(DX_TEMP_DIR, 'package.json'));
                         const resultPackagejson = { ...dxPackageJson };
-                        const keys = Object.keys(INIT_PACKAGE_VALUES) as Array<keyof typeof INIT_PACKAGE_VALUES>;
+                        const keys = Object.keys(INIT_PACKAGE_VALUES) as (keyof typeof INIT_PACKAGE_VALUES)[];
                         keys.forEach(key => {
                           resultPackagejson[key] = INIT_PACKAGE_VALUES[key];
                         });
@@ -94,7 +94,7 @@ export default async (path: string = '') => {
   try {
     await update.run();
     await fs.remove(DX_TEMP_DIR);
-  } catch (e: unknown) {
+  } catch (e) {
     console.error(e);
     process.exit(1);
   }

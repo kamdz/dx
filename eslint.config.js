@@ -1,5 +1,5 @@
 import { includeIgnoreFile } from '@eslint/compat';
-import pluginJs from '@eslint/js';
+import eslint from '@eslint/js';
 import importPlugin from 'eslint-plugin-import';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import globals from 'globals';
@@ -9,11 +9,17 @@ export default [
   { files: ['**/*.{js,mjs,cjs,ts}'] },
   includeIgnoreFile(`${process.cwd()}/.gitignore`),
   { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
-  pluginJs.configs.recommended,
+  eslint.configs.recommended,
   {
     ...importPlugin.flatConfigs.recommended,
     ...importPlugin.flatConfigs.typescript
   },
   ...tseslint.configs.recommended,
+  ...tseslint.configs.stylistic,
+  {
+    rules: {
+      '@typescript-eslint/use-unknown-in-catch-callback-variable': 'off'
+    }
+  },
   eslintPluginPrettierRecommended
 ];

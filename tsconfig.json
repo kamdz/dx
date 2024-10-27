@@ -22,7 +22,8 @@
     "strict": true,
     "strictNullChecks": true,
     "target": "ESNext",
-    "types": ["node", "jest"]
+    "types": ["node", "jest"],
+    "useUnknownInCatchVariables": false
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
