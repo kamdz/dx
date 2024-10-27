@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/kamdz/dx/compare/v1.1.4...v1.2.0) (2024-10-27)
+
+
+### Features
+
+* **typescript,eslint:** set useUnknownInCatchVariables and tseslint.configs.stylistic ([3250279](https://github.com/kamdz/dx/commit/32502790f0a5d56067bd696ad58de096dcdd3163))
+
 ## [1.1.4](https://github.com/kamdz/dx/compare/v1.1.3...v1.1.4) (2024-10-27)
 
 
