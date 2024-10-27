@@ -1,6 +1,6 @@
 # @kamdz/dx
 
-**@kamdz/dx** is an opinionated developer experience (DX) template designed to set up TypeScript projects with best practices baked in. It comes pre-configured with tools for streamlined development, including building, linting, formatting, testing, and CI/CD.
+**@kamdz/dx** is an opinionated developer experience (DX) template designed to set up TypeScript projects with best practices baked in. It comes pre-configured with tools for streamlined development, including building, linting, formatting, testing, and CI/CD. Every file and configuration included in this project acts as a blueprint for other projects.
 
 🚀 **Quick start:**
 
