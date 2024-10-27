@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/kamdz/dx/compare/v1.1.2...v1.1.3) (2024-10-27)
+
+
+### Bug Fixes
+
+* **github-actions:** change settings ([1e4cc70](https://github.com/kamdz/dx/commit/1e4cc704a30a5a4d97f670a470899ed628b4977b))
+
 ## [1.1.2](https://github.com/kamdz/dx/compare/v1.1.1...v1.1.2) (2024-10-26)
 
 
