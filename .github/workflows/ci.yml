@@ -1,4 +1,4 @@
-name: Lint and Test
+name: Continuous Integration
 
 on:
   push:
@@ -9,7 +9,8 @@ on:
       - main
 
 jobs:
-  lint:
+  code-check:
+    name: Lint, Format, Typings
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -23,10 +24,14 @@ jobs:
           cache: 'yarn'
       - name: Install dependencies
         run: yarn
-      - name: Lint
-        run: yarn lint && yarn format && yarn type-check
-
-  tests:
+      - name: Lint code
+        run: yarn lint
+      - name: Format code
+        run: yarn format
+      - name: Type check
+        run: yarn type-check
+  test:
+    name: Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
