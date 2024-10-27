@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/kamdz/dx/compare/v1.1.3...v1.1.4) (2024-10-27)
+
+
+### Bug Fixes
+
+* **github-actions:** typo ([da36c77](https://github.com/kamdz/dx/commit/da36c775bbdb2e633f743d6fb1e9b6c434268521))
+
 ## [1.1.3](https://github.com/kamdz/dx/compare/v1.1.2...v1.1.3) (2024-10-27)
 
 
