@@ -10,7 +10,6 @@ updates:
       include: scope
     versioning-strategy: 'increase'
     open-pull-requests-limit: 20
-updates:
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
