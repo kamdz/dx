@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/kamdz/dx/compare/v1.2.0...v1.2.1) (2024-10-28)
+
+
+### Bug Fixes
+
+* readme.md filename ([2d443fb](https://github.com/kamdz/dx/commit/2d443fb6e4f0c5bb3e11c24124cd48adb0e2c21d))
+
 # [1.2.0](https://github.com/kamdz/dx/compare/v1.1.4...v1.2.0) (2024-10-27)
 
 
