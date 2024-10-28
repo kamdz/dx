@@ -27,7 +27,7 @@ export default async (path = '') => {
     author: packageJson.author,
     dependencies: {}
   };
-  const SKIP_PATHS = ['.git', 'bin', 'src', 'package.json', 'CHANGELOG.md', 'README.MD', 'yarn.lock'];
+  const SKIP_PATHS = ['.git', 'bin', 'src', 'package.json', 'CHANGELOG.md', 'README.md', 'yarn.lock'];
 
   const update = new Listr([
     {
