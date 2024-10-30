@@ -1413,7 +1413,7 @@ __metadata:
     "@semantic-release/git": "npm:^10.0.1"
     "@types/fs-extra": "npm:^11.0.4"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.8.3"
+    "@types/node": "npm:^22.8.4"
     commander: "npm:^12.1.0"
     commitizen: "npm:^4.3.1"
     cz-conventional-changelog: "npm:^3.3.0"
@@ -2435,12 +2435,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^22.8.3":
-  version: 22.8.3
-  resolution: "@types/node@npm:22.8.3"
+"@types/node@npm:^22.8.4":
+  version: 22.8.4
+  resolution: "@types/node@npm:22.8.4"
   dependencies:
     undici-types: "npm:~6.19.8"
-  checksum: 10c0/7c67c1cd19388caf227f3c5aa290c163ddc6587e899fe67d1276a83d8233340dd08a88ef1836e86259cd402494953c5e2d79b175b98f1505afcafa65ec0c43b6
+  checksum: 10c0/f88d030480630194a9168772462ec09b2d86454f34368c46d2b7fda5dc6e14594b1576fcc5c35cc53b57a4d1e8dd2865a85ae81f34ded0d1af753a0f5d294c25
   languageName: node
   linkType: hard
 
