@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/kamdz/dx/compare/v1.2.1...v1.2.2) (2024-11-15)
+
+
+### Bug Fixes
+
+* **deps:** bump @eslint/plugin-kit in the npm_and_yarn group ([c75c1c3](https://github.com/kamdz/dx/commit/c75c1c3318a408ad1ef7fca2d549804ea43e1ce8))
+
 ## [1.2.1](https://github.com/kamdz/dx/compare/v1.2.0...v1.2.1) (2024-10-28)
 
 
