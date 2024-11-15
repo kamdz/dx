@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/kamdz/dx/compare/v1.2.2...v1.2.3) (2024-11-15)
+
+
+### Bug Fixes
+
+* **deps:** bump cross-spawn in the npm_and_yarn group ([68cb786](https://github.com/kamdz/dx/commit/68cb786d804121497737413c12aca6ad688a1dcb))
+
 ## [1.2.2](https://github.com/kamdz/dx/compare/v1.2.1...v1.2.2) (2024-11-15)
 
 
