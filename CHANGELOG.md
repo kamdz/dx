@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/kamdz/dx/compare/v1.2.3...v1.3.0) (2024-11-27)
+
+
+### Features
+
+* update dependabot.yml ([f51b10a](https://github.com/kamdz/dx/commit/f51b10a518d2a7dd4cd46c945a3cee1a569da7ef))
+
 ## [1.2.3](https://github.com/kamdz/dx/compare/v1.2.2...v1.2.3) (2024-11-15)
 
 
