@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/kamdz/dx/compare/v1.3.1...v1.3.2) (2025-01-16)
+
+
+### Bug Fixes
+
+* **deps:** bump fs-extra from 11.2.0 to 11.3.0 in the dependencies group ([b5dc572](https://github.com/kamdz/dx/commit/b5dc5729a0cbeccdf6cd03436467332f3fc920ba))
+
 ## [1.3.1](https://github.com/kamdz/dx/compare/v1.3.0...v1.3.1) (2024-12-30)
 
 
