@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/kamdz/dx/compare/v1.3.2...v1.3.3) (2025-01-21)
+
+
+### Bug Fixes
+
+* **deps:** bump commander in the dependencies group ([f3c16b7](https://github.com/kamdz/dx/commit/f3c16b7cc6de78a37df90249d2ab679576201d6f))
+
 ## [1.3.2](https://github.com/kamdz/dx/compare/v1.3.1...v1.3.2) (2025-01-16)
 
 
