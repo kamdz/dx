@@ -136,7 +136,7 @@
   },
   "packageManager": "yarn@4.5.1",
   "dependencies": {
-    "commander": "^13.0.0",
+    "commander": "^13.1.0",
     "fs-extra": "^11.3.0",
     "listr2": "^8.2.5",
     "picocolors": "^1.1.1"
