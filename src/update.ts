@@ -58,27 +58,27 @@ export default async (path = '') => {
                   task: async (): Promise<void> => {
                     fs.readJSON(join(WORKING_DIR, 'package.json'))
                       .then(async packageJson => {
-                        const dxPackageJson = await fs.readJSON(join(DX_TEMP_DIR, 'package.json'));
-                        const resultPackagejson = { ...packageJson };
-                        Object.keys(resultPackagejson).forEach(key => {
+                        const dxPackage = await fs.readJSON(join(DX_TEMP_DIR, 'package.json'));
+                        const resultPackage = { ...packageJson };
+                        Object.keys(resultPackage).forEach(key => {
                           if (!(key in INIT_PACKAGE_VALUES)) {
                             if (['scripts', 'devDependencies'].includes(key)) {
-                              resultPackagejson[key] = Object.assign(resultPackagejson[key], dxPackageJson[key]);
+                              resultPackage[key] = Object.assign(resultPackage[key], dxPackage[key]);
                             } else {
-                              resultPackagejson[key] = dxPackageJson[key];
+                              resultPackage[key] = dxPackage[key];
                             }
                           }
                         });
-                        await fs.writeJSON(join(WORKING_DIR, 'package.json'), resultPackagejson, { spaces: '  ' });
+                        await fs.writeJSON(join(WORKING_DIR, 'package.json'), resultPackage, { spaces: '  ' });
                       })
                       .catch(async () => {
-                        const dxPackageJson = await fs.readJSON(join(DX_TEMP_DIR, 'package.json'));
-                        const resultPackagejson = { ...dxPackageJson };
+                        const dxPackage = await fs.readJSON(join(DX_TEMP_DIR, 'package.json'));
+                        const resultPackage = { ...dxPackage };
                         const keys = Object.keys(INIT_PACKAGE_VALUES) as (keyof typeof INIT_PACKAGE_VALUES)[];
                         keys.forEach(key => {
-                          resultPackagejson[key] = INIT_PACKAGE_VALUES[key];
+                          resultPackage[key] = INIT_PACKAGE_VALUES[key];
                         });
-                        await fs.writeJSON(join(WORKING_DIR, 'package.json'), resultPackagejson, { spaces: '  ' });
+                        await fs.writeJSON(join(WORKING_DIR, 'package.json'), resultPackage, { spaces: '  ' });
                       });
                   }
                 });
