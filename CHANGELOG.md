@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/kamdz/dx/compare/v1.4.0...v1.4.1) (2025-01-27)
+
+
+### Bug Fixes
+
+* update dependabot.yml ([644394d](https://github.com/kamdz/dx/commit/644394d4b3c025ce9a1dcf0d522829d4f61a1f3d))
+
 # [1.4.0](https://github.com/kamdz/dx/compare/v1.3.3...v1.4.0) (2025-01-27)
 
 
