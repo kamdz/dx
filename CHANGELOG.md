@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/kamdz/dx/compare/v1.3.3...v1.4.0) (2025-01-27)
+
+
+### Features
+
+* better exports, refactor ([cd3a681](https://github.com/kamdz/dx/commit/cd3a68177361f3ea72de765f061cf9eb82a2d676))
+
 ## [1.3.3](https://github.com/kamdz/dx/compare/v1.3.2...v1.3.3) (2025-01-21)
 
 
