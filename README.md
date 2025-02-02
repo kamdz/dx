@@ -1,6 +1,7 @@
 # @kamdz/dx
 
-**@kamdz/dx** is an opinionated developer experience (DX) template designed to set up TypeScript projects with best practices baked in. It comes pre-configured with tools for streamlined development, including building, linting, formatting, testing, and CI/CD. Every file and configuration included in this project acts as a blueprint for other projects.
+**@kamdz/dx** is an opinionated, production-ready boilerplate for TypeScript projects, designed to provide an optimal developer experience (DX). It comes pre-configured with best practices and essential tools for streamlined development, including building, linting, formatting, testing, and CI/CD. Every file and configuration in this project serves as a blueprint for future projects.  
+
 
 🚀 **Quick start:**
 
@@ -23,16 +24,18 @@ npx @kamdz/dx [path]
 
 ## 📜 Available Commands
 
-- `yarn build`: Bundle your code to ES Module and CommonJS with **tsup**
-- `yarn cli`: Run the custom CLI in `bin/cli.ts`
-- `yarn commit`: Use **commitizen** for conventional commits
-- `yarn dev`: Start development mode with **tsx**
-- `yarn dx`: Update your project with the latest **@kamdz/dx**
-- `yarn format`: Format code with **Prettier**
-- `yarn lint`: Lint and auto-fix issues with **ESLint**
-- `yarn start`: Run the project with **tsx**
-- `yarn test`: Run tests with **Jest** with coverage
-- `yarn type-check`: Type-check your project using **TypeScript**
+| Polecenie          | Opis                                                 |
+|--------------------|------------------------------------------------------|
+| `yarn build`      | Bundle your code to ES Module and CommonJS with **tsup** |
+| `yarn cli`        | Run the custom CLI in `bin/cli.ts`                   |
+| `yarn commit`     | Use **commitizen** for conventional commits          |
+| `yarn dev`        | Start development mode with **tsx**                  |
+| `yarn dx`         | Update your project with the latest **@kamdz/dx**    |
+| `yarn format`     | Format code with **Prettier**                        |
+| `yarn lint`       | Lint and auto-fix issues with **ESLint**             |
+| `yarn start`      | Run the project with **tsx**                         |
+| `yarn test`       | Run tests with **Jest** with coverage                |
+| `yarn type-check` | Type-check your project using **TypeScript**         |
 
 ## 🤔 Why?
 
