@@ -18,7 +18,8 @@ export default [
   ...tseslint.configs.stylistic,
   {
     rules: {
-      '@typescript-eslint/use-unknown-in-catch-callback-variable': 'off'
+      '@typescript-eslint/no-unused-vars': ['error', { caughtErrors: 'none' }],
+      'no-empty': ['error', { allowEmptyCatch: true }]
     }
   },
   eslintPluginPrettierRecommended
