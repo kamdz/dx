@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/kamdz/dx/compare/v1.4.1...v1.4.2) (2025-02-09)
+
+
+### Bug Fixes
+
+* update eslint.config.js ([5d34984](https://github.com/kamdz/dx/commit/5d3498404ce894ad07851a269403565432cb9290))
+
 ## [1.4.1](https://github.com/kamdz/dx/compare/v1.4.0...v1.4.1) (2025-01-27)
 
 
