@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/kamdz/dx/compare/v1.4.2...v1.5.0) (2025-02-13)
+
+
+### Features
+
+* add jsx ([fb9439c](https://github.com/kamdz/dx/commit/fb9439cca00679a2447e525822d7fe4239194d68))
+
 ## [1.4.2](https://github.com/kamdz/dx/compare/v1.4.1...v1.4.2) (2025-02-09)
 
 
