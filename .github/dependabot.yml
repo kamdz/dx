@@ -5,21 +5,42 @@ updates:
     schedule:
       interval: 'daily'
     commit-message:
-      prefix: fix
-      prefix-development: chore
-      include: scope
-    versioning-strategy: 'increase'
+      prefix: 'fix'
+      prefix-development: 'chore'
+      include: 'scope'
     open-pull-requests-limit: 20
     groups:
-      dependencies:
+      major-dependencies:
+        patterns:
+          - '*'
+        update-types:
+          - 'major'
         dependency-type: 'production'
-      dev-dependencies:
+      minor-patch-dependencies:
+        patterns:
+          - '*'
+        update-types:
+          - 'minor'
+          - 'patch'
+        dependency-type: 'production'
+      major-dev-dependencies:
+        patterns:
+          - '*'
+        update-types:
+          - 'major'
+        dependency-type: 'development'
+      minor-patch-dev-dependencies:
+        patterns:
+          - '*'
+        update-types:
+          - 'minor'
+          - 'patch'
         dependency-type: 'development'
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
       interval: 'weekly'
     commit-message:
-      prefix: fix
-      prefix-development: chore
-      include: scope
+      prefix: 'fix'
+      prefix-development: 'chore'
+      include: 'scope'
