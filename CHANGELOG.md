@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/kamdz/dx/compare/v1.6.0...v1.6.1) (2025-02-14)
+
+
+### Bug Fixes
+
+* **deps:** bump @octokit/endpoint in the npm_and_yarn group ([81ad3d0](https://github.com/kamdz/dx/commit/81ad3d062b306b90b2e7fa35a0727112cdfab64f))
+
 # [1.6.0](https://github.com/kamdz/dx/compare/v1.5.0...v1.6.0) (2025-02-13)
 
 
