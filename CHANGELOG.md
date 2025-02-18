@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/kamdz/dx/compare/v1.6.1...v1.6.2) (2025-02-18)
+
+
+### Bug Fixes
+
+* **deps:** bump the npm_and_yarn group with 3 updates ([6b0f0d2](https://github.com/kamdz/dx/commit/6b0f0d2a94afdc2677bf27001fe354ab87cd15ed))
+
 ## [1.6.1](https://github.com/kamdz/dx/compare/v1.6.0...v1.6.1) (2025-02-14)
 
 
