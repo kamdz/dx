@@ -1,6 +1,6 @@
 # @kamdz/dx
 
-**@kamdz/dx** is an opinionated, production-ready boilerplate for TypeScript projects, designed to provide an optimal developer experience (DX). It comes pre-configured with best practices and essential tools for streamlined development, including building, linting, formatting, testing, and CI/CD. Every file and configuration in this project serves as a blueprint for future projects.  
+**@kamdz/dx** is an opinionated, production-ready boilerplate/starter for TypeScript projects, designed to provide an optimal developer experience (DX). It comes pre-configured with best practices and essential tools for streamlined development, including building, linting, formatting, testing, and CI/CD. Every file and configuration in this project serves as a blueprint for future projects.  
 
 
 🚀 **Quick start:**
