@@ -1,6 +1,6 @@
 {
   "name": "@kamdz/dx",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "An opinionated developer experience (DX) template for TypeScript projects. Pre-configured with tools for streamlined development, including building, linting, formatting, testing, and CI/CD to ensure consistency across multiple projects.",
   "keywords": [
     "boilerplate",

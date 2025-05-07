@@ -1,3 +1,10 @@
+## [1.6.4](https://github.com/kamdz/dx/compare/v1.6.3...v1.6.4) (2025-05-07)
+
+
+### Bug Fixes
+
+* **deps:** bump listr2 in the minor-patch-dependencies group ([a29f2e5](https://github.com/kamdz/dx/commit/a29f2e5344fd5d11e7d28c2db0eabff7bf5c2019))
+
 ## [1.6.3](https://github.com/kamdz/dx/compare/v1.6.2...v1.6.3) (2025-04-10)
 
 
