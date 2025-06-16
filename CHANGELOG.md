@@ -1,3 +1,10 @@
+## [1.6.5](https://github.com/kamdz/dx/compare/v1.6.4...v1.6.5) (2025-06-16)
+
+
+### Bug Fixes
+
+* **deps:** bump commander in the major-dependencies group ([e85c347](https://github.com/kamdz/dx/commit/e85c347c6dbc95f4598e702bc9d9ad33d0c9f5b5))
+
 ## [1.6.4](https://github.com/kamdz/dx/compare/v1.6.3...v1.6.4) (2025-05-07)
 
 
