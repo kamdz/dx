@@ -1,3 +1,10 @@
+## [1.6.6](https://github.com/kamdz/dx/compare/v1.6.5...v1.6.6) (2025-07-09)
+
+
+### Bug Fixes
+
+* **deps:** bump listr2 in the major-dependencies group ([3a1a06a](https://github.com/kamdz/dx/commit/3a1a06ab7004cd42a3bdf900a5a9d044e8d28e90))
+
 ## [1.6.5](https://github.com/kamdz/dx/compare/v1.6.4...v1.6.5) (2025-06-16)
 
 
