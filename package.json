@@ -134,7 +134,7 @@
   "dependencies": {
     "commander": "^14.0.0",
     "fs-extra": "^11.3.0",
-    "listr2": "^8.2.5",
+    "listr2": "^9.0.0",
     "picocolors": "^1.1.1"
   }
 }
