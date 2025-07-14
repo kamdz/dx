@@ -8064,8 +8064,8 @@ __metadata:
   linkType: hard
 
 "listr2@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "listr2@npm:9.0.0"
+  version: 9.0.1
+  resolution: "listr2@npm:9.0.1"
   dependencies:
     cli-truncate: "npm:^4.0.0"
     colorette: "npm:^2.0.20"
@@ -8073,7 +8073,7 @@ __metadata:
     log-update: "npm:^6.1.0"
     rfdc: "npm:^1.4.1"
     wrap-ansi: "npm:^9.0.0"
-  checksum: 10c0/94079ab85cc4381c87a08c6e54f7ec4671d8b73f3c0729a2ebfc16775f934afa6d2a9d6195e12a7472971472ea544602bc2693660c0b80c1258b1c0134a7db41
+  checksum: 10c0/73462e84a3c4f05de5a3cdea5eaa0209c6ab04a2fdb4046545049806e9ba17b6ee84a097ebf7ffc0e903b0f2a9094c0c480cd2f2bb21d7d21e20969e17a3c32b
   languageName: node
   linkType: hard
 
