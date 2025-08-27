@@ -1,3 +1,10 @@
+## [1.6.8](https://github.com/kamdz/dx/compare/v1.6.7...v1.6.8) (2025-08-27)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/checkout from 4 to 5 ([387762d](https://github.com/kamdz/dx/commit/387762daf0e964adf27fbb086833ee78c3301d10))
+
 ## [1.6.7](https://github.com/kamdz/dx/compare/v1.6.6...v1.6.7) (2025-08-10)
 
 
