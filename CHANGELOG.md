@@ -1,3 +1,10 @@
+## [1.6.11](https://github.com/kamdz/dx/compare/v1.6.10...v1.6.11) (2025-09-14)
+
+
+### Bug Fixes
+
+* **deps:** bump the minor-patch-dependencies group across 1 directory with 2 updates ([51e0cde](https://github.com/kamdz/dx/commit/51e0cde1d99297d6081794d3122ea90282b83119))
+
 ## [1.6.10](https://github.com/kamdz/dx/compare/v1.6.9...v1.6.10) (2025-09-14)
 
 
