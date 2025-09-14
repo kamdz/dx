@@ -1,3 +1,10 @@
+## [1.6.10](https://github.com/kamdz/dx/compare/v1.6.9...v1.6.10) (2025-09-14)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/setup-node from 4 to 5 ([4e66866](https://github.com/kamdz/dx/commit/4e66866e1b795ec3afc34e84ac8f374afaae8841))
+
 ## [1.6.9](https://github.com/kamdz/dx/compare/v1.6.8...v1.6.9) (2025-08-27)
 
 
